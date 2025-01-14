@@ -1,12 +1,17 @@
 package com.Banking.Application.Banking.Application.Model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.time.LocalDateTime;
 
-    @Entity
-    @Data
-    public class Transaction {
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Data
+public class Transaction {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
